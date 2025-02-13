@@ -1,0 +1,129 @@
+Obima@DESKTOP-SPPI41L MINGW64 ~
+$ cd C:
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c
+$ mkdir "application"
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c
+$ cd "application"
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application
+$ touch apropos.txt
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application
+$ git init
+
+Initialized empty Git repository in C:/application/.git
+/
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git add apropos.txt
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git commit -m "Ajout du fichier apropos"
+[master (root-commit) 9c02117] Ajout du fichier apropos
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 apropos.txt
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git log
+commit 9c02117f89cf9d8959ec09ae9a909ddf312054fd (HEAD -> m
+aster)
+Author: Claude Bernard BADJAGOU <ibadjagou@gmail.com>
+Date:   Thu Feb 13 20:29:46 2025 +0000
+
+    Ajout du fichier apropos
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ touch acceuil.txt
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git add acceuil.txt
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git commit -m "Ajout du fichier accueil"
+[master d7fc31e] Ajout du fichier accueil
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 acceuil.txt
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git rm --cached apropos.txt
+rm 'apropos.txt'
+
+
+
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git add .
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git commit -m "Suppression du fichier apropos"
+On branch master
+nothing to commit, working tree clean
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git log
+commit d7fc31e010f5d04ff54feb526fe4feae239b9a30 (HEAD -> ma
+ster)
+Author: Claude Bernard BADJAGOU <ibadjagou@gmail.com>
+Date:   Thu Feb 13 20:39:52 2025 +0000
+
+    Ajout du fichier accueil
+
+commit 9c02117f89cf9d8959ec09ae9a909ddf312054fd
+Author: Claude Bernard BADJAGOU <ibadjagou@gmail.com>
+Date:   Thu Feb 13 20:29:46 2025 +0000
+
+    Ajout du fichier apropos
+
+
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (master)
+$ git branch -M main
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (main)
+$ git remote add origin https://github.com/claude-bernard-badjagou/mon_projet.git
+
+
+Obima@DESKTOP-SPPI41L MINGW64 /c/application (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 475 bytes | 237.00 KiB/s, done
+.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from
+0)
+To https://github.com/claude-bernard-badjagou/mon_projet.gi
+t
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
